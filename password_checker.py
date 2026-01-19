@@ -1,7 +1,3 @@
-password = input("Введите пароль: ")
-score = 0
-
-
 def has_upper_letters(password):
     return any(symbol.isupper() for symbol in password)
 
@@ -24,6 +20,7 @@ def is_very_long(password):
 
 
 def pass_rating():
+    password = input("Введите пароль: ")
     score = 0
     checkers_list = [
         has_upper_letters(password),
