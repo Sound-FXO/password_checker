@@ -11,8 +11,7 @@ def has_digit(password):
 
 
 def has_symbols(password):
-    symbols = "@#$%()&*"
-    return any(symbol in symbols for symbol in password)
+    return any(not symbol.isalpha() and not symbol.isdigit() for symbol in password)
 
 
 def is_very_long(password):
