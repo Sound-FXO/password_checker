@@ -11,7 +11,7 @@ def has_digit(password):
 
 
 def has_symbols(password):
-    return any(not symbol.isalpha() and not symbol.isdigit() for symbol in password)
+    return any(not symbol.isalnum() for symbol in password)
 
 
 def is_very_long(password):
